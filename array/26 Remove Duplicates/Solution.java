@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Solution {
-    public int removeDuplicates(int[] nums) {
+    public static int removeDuplicates(int[] nums) {
         int ans = 0;
         if (nums.length > 0) {
             int cur = nums[0];
@@ -24,7 +24,7 @@ public class Solution {
             numbers[i] = scanner.nextInt();
         scanner.close();
 
-        int result = new Solution().removeDuplicates(numbers);
+        int result = removeDuplicates(numbers);
         System.out.print(Integer.toString(result));
     }
 }
